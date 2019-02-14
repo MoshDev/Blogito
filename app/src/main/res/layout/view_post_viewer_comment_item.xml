@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal"
+  android:paddingStart="16dp"
+  android:paddingEnd="16dp">
+
+  <View
+    android:id="@+id/depthView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content" />
+
+  <View
+    android:layout_width="0.7dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/commentHeaderView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxLines="1"
+      android:paddingStart="8dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+      tools:text="@tools:sample/full_names" />
+
+    <TextView
+      android:id="@+id/commentContentView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingStart="8dp"
+      android:paddingBottom="8dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+      tools:text="@tools:sample/full_names" />
+
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="0.7dp"
+      android:background="@android:color/darker_gray" />
+  </LinearLayout>
+</LinearLayout>
